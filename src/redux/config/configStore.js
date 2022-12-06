@@ -17,7 +17,9 @@ combineReducers은 여러 개의 독립적인 reducer의 반환 값을 하나의
 */
 
 const rootReducer = combineReducers({
-  counter: counter, //import 카운터 모듈을 하고 reducer에 추가해주면 store와 module이 연결됨.
+  counter: counter, //store와 module을 연결시켜주는 코드!
+  //import 카운터 모듈을 하고 reducer에 추가해주면 store와 module이 연결됨.
+  //module을 추가할 때마다 똑같이 진행함
 });
 const store = createStore(rootReducer);
 
